@@ -1,4 +1,4 @@
-Sparrow Dance Studio.
+Dance
 
 Created
 -Bat-Ochir
