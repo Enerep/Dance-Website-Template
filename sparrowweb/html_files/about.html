@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="../fw/aboutstyle.css">
+    <script src="../fw/aboutjs.js"> </script>
+    
+    <title>BatOchir</title>
+  </head>
+  <body>
+      <div id="banner">
+          <!-- navbar -->
+          <p class="clsd"><strong> ABOUT US</strong> </p>
+          <img class="imgrand" src="../images/IMG_9247.jpeg" >
+          <div class="wholeEssay">  SOMETHING
+          </div>
+          
+          <script>
+              const checkpoint = 1500;
+               
+              window.addEventListener("scroll", () => {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll <= checkpoint) {
+                  opacity = 1 - currentScroll / checkpoint;
+                } else {
+                  opacity = 0;
+                }
+                document.querySelector(".randomword").style.opacity = opacity;
+              });
+        </script>
+          
+          
+          <div class="randomword">
+              SOMETHING
+
+           </div>
+          
+          
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+          </div>
+
+          <span style="font-size:4vmax;cursor:pointer;color:white" onclick="openNav()">&#9776; </span>
+          
+          <!-- End of navbar -->
+          
+          <!-- the logo thing, when cliked it redirects to homepage(if wanted to welcome i can make a html file without welcome and redirect there)-->
+        <div id="site_title">
+          <h1> <a href="home.html"> <img src="../images/bat.png" alt=""/></a> </h1>
+        </div>
+
+        <!-- The top instructor and schedule adn about me, can edit if wanted -->
+        <div class = "somethingtop">
+            <a style="text-decoration:none" href="instructors.html" class="instructorp1"> INSTRUCTOR </a>
+            <a style="text-decoration:none" href="schedule.html"class="instructorp2"> SCHEDULE </a>
+            <a style="text-decoration:none" href="#"class="instructorp3"> ABOUT US </a>
+        </div>
+        
+      </div>
+      <!--end of banner -->
+      
+      <!-- change background -->
+      <script>
+          const [red, green, blue] = [135,135,135]
+          const section1 = document.querySelector('#banner')
+          window.addEventListener('scroll', () => {
+            const y = 1 + (window.scrollY || window.pageYOffset) / 230
+            const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+            section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+          })
+    </script>
+      <!--change backgound -->
+    
+      <!--Footer can add more-->
+      <div id="footer">
+        <ul class="footer_menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="last_menu"><a href="home.html#contactus">Contact</a></li>
+        </ul>
+        Copyright &copy; <a href="https://www.facebook.com/enerel.amgalan.12327/">Bat-Ochir</a></div>
+      <!--end footer -->
+
+    </body>
+</html>
+

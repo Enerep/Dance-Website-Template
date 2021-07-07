@@ -1,0 +1,333 @@
+body{
+    background: white;
+    margin: 0;
+}
+#load {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background: black;
+    color: red;
+    height: 100%;
+    width: 100%;
+}
+
+#load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.jt {
+  position: relative;
+  font-size: 15vmin;
+  font-family: 'Staatliches', sans-serif;
+  text-transform: uppercase;
+  font-display: swap;
+  text-shadow: 0 0 10px tomato;
+}
+
+.jt__row {
+  display: block;
+}
+.jt__row:nth-child(1) {
+  clip-path: polygon(-10% 75%, 110% 75%, 110% 110%, -10% 110%);
+}
+.jt__row:nth-child(2) {
+  clip-path: polygon(-10% 50%, 110% 50%, 110% 75.3%, -10% 75.3%);
+}
+.jt__row:nth-child(3) {
+  clip-path: polygon(-10% 25%, 110% 25%, 110% 50.3%, -10% 50.3%);
+}
+.jt__row:nth-child(4) {
+  clip-path: polygon(-10% 0%, 110% 0%, 110% 25.3%, -10% 25.3%);
+}
+
+.jt__row.jt__row--sibling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  witdh:800px;
+}
+
+.jt__text {
+  display: block;
+  transform-origin: bottom left;
+  animation: moveIn 2s 0s cubic-bezier(.36,0,.06,1) alternate infinite ;
+}
+.jt__row:nth-child(1) .jt__text {
+  transform: translateY(-0.1em);
+}
+.jt__row:nth-child(2) .jt__text {
+  transform: translateY(-0.3em) scaleY(1.1);
+}
+.jt__row:nth-child(3) .jt__text {
+  transform: translateY(-0.5em) scaleY(1.2) ;
+}
+.jt__row:nth-child(4) .jt__text {
+  transform: translateY(-0.7em) scaleY(1.3) ;
+}
+.jt__row:nth-child(5) .jt__text {
+  transform: translateY(-0.9em) scaleY(1.4) ;
+}
+.jt__row:nth-child(6) .jt__text {
+  transform: translateY(-1.1em) scaleY(1.5) ;
+}
+
+@keyframes moveIn {
+  50%, 100% {
+    transform: translateY(0em)
+  }
+  0%   {
+  opacity: 0;
+  filter: blur(10px);
+  
+  }
+  100% {
+  opacity: 1;
+  filter: blur(0px);
+  }
+}
+
+
+
+.debug .jt__row:nth-child(even) {
+  color: black;
+  background: white;
+}
+.debug .jt__row:nth-child(odd) {
+  color: white;
+  background: black;
+}
+
+* { box-sizing: border-box }
+
+.button {
+  background-color: #303030;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Navbar decor*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top:0%;
+  right:0%;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Banner main thingy*/
+
+#banner {
+    clear: both;
+    background: url("../images/IMG_9247.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw 130vh;
+    width: 100vw;
+    height: 130vh;
+    padding: 0 10px;
+}
+
+#banner #site_title {
+    padding: 10px 0 0 0;
+    margin: 0 auto;
+}
+
+#banner #site_title img{
+    
+    position: fixed;
+    top:2.6%;
+    left:1%;
+    width:30vmin;
+}
+
+#banner span{
+    position:fixed;
+    top:2.5%;
+    right:2.5%;
+}
+
+#site_title h1 a {
+    margin: 0px;
+    padding: 0px;
+    font-size: 32px;
+    color: #cdcf19;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#site_title h1 a:hover {
+    font-weight: normal;
+    text-decoration: none;
+}
+/* Stupid mistake but too lazy to fix, also its the about schedule and intrustors*/
+.somethingtop .instructorp1{
+    position:fixed;
+    padding:5px;
+    top:3.9%;
+    left:40%;
+    color:#A9A9A9;
+    font-size:2.5vmin;
+    font-family: 'GrotExBold';
+}
+.somethingtop .instructorp2{
+    position:fixed;
+    padding:5px;
+    top:3.9%;
+    left:56.5%;
+    color:#A9A9A9;
+    font-size:2.5vmin;
+    font-family: 'GrotExBold';
+}
+.somethingtop .instructorp3{
+    position:fixed;
+    padding:5px;
+    top:3.9%;
+    left:70%;
+    color:#A9A9A9;
+    font-size:2.5vmin;
+    font-family: 'GrotExBold';
+}
+/* The banner end line*/
+
+/* oUR MISSION START */
+
+.ourmiss {
+    background-color:white;
+    height:90vh;
+    /* One*/
+    background-image: url('http://clipart-library.com/images/qcBoErRni.jpg'),url('http://clipart-library.com/images/rcLnyBG6i.png') ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, left top;
+    background-size: 10vmax 10vmax;
+    margin-right:15px;
+}
+.ourmiss p{
+    font-size:6.5vmax;
+    font-family: 'GrotExBold';
+    text-align: center;
+}
+.ourmiss .missionsay {
+    margin:15px;
+    font-size: 4.5vmin;
+    font-family: 'GrotExBold';
+    
+}
+/* Our mission end*/
+
+/* Contact us start*/
+
+.contactus {
+    height: 100vh;
+    margin: 0;
+    background: url("../images/IMG_9253.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+.contactus .par{
+    color:#D3D3D3;
+    padding-top: 35px;
+    font-size:8vmin;
+    font-family: 'GrotExBold';
+    text-align: center;
+}
+.contactus .par2{
+    color:#D3D3D3;
+    padding-top: 50px;
+    position:relative;
+    text-align: center;
+    font-size:3vmin;
+    font-family: 'GrotExBold';
+}
+
+
+/* Contact us end*/
+
+/* footer */
+#footer {
+    clear: both;
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555555;
+    background: url("../images/footer_bg.jpg") repeat;
+    border-top: 1px solid #22211e;
+}
+
+#footer a {
+    font-weight: normal;
+    color: #777777;
+}
+
+#footer a:hover {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+#footer .footer_menu {
+    margin: 0 0 10px 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.footer_menu li {
+    margin: 0px;
+    padding: 0 20px;
+    display: inline;
+    border-right: 1px solid #555555;
+}
+
+.footer_menu .last_menu {
+    border: none;
+}
+
+/* end of footer */
+

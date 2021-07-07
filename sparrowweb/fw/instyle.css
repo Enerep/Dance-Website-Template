@@ -1,0 +1,577 @@
+body{
+    background: white;
+    margin: 0;
+}
+
+* { box-sizing: border-box }
+
+/* banner end*/
+
+#banner {
+    clear: both;
+    background-color: black;
+    width: 100vw;
+    height: 60.45vh;
+    padding: 0 10px;
+    border-width: bold;
+    border-style: solid;
+    border-bottom-color: white;
+}
+
+#banner p{
+    color:white;
+    font-size:5vmax;
+    text-align:center;
+    position:relative;
+    top:100px;
+    
+    display: inline-block;
+     -webkit-transform: scale(1.5, 1);
+     -moz-transform: scale(1.5, 1);
+     -o-transform: scale(1.5, 1);
+     transform: scale(1.5, 1);
+     margin-left:29.5%;
+     margin-right:15%;
+    
+}
+
+#banner #site_title {
+    padding: 10px 0 0 0;
+    margin: 0 auto;
+}
+
+#banner #site_title img{
+    
+    position: fixed;
+    top:2.6%;
+    left:1%;
+    width:30vmin;
+}
+
+#banner span{
+    position:fixed;
+    top:2.5%;
+    right:2.5%;
+}
+
+#site_title h1 a {
+    margin: 0px;
+    padding: 0px;
+    font-size: 32px;
+    color: #cdcf19;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#site_title h1 a:hover {
+    font-weight: normal;
+    text-decoration: none;
+}
+/* Stupid mistake but too lazy to fix, also its the about schedule and intrustors*/
+.somethingtop .instructorp1{
+    position:fixed;
+    padding:5px;
+    top:3.9%;
+    left:40%;
+    color:white;
+    font-size:2.5vmin;
+    font-family: 'GrotExBold';
+}
+.somethingtop .instructorp2{
+    position:fixed;
+    padding:5px;
+    top:3.9%;
+    left:56.5%;
+    color:#A9A9A9;
+    font-size:2.5vmin;
+    font-family: 'GrotExBold';
+}
+.somethingtop .instructorp3{
+    position:fixed;
+    padding:5px;
+    top:3.9%;
+    left:70%;
+    color:#A9A9A9;
+    font-size:2.5vmin;
+    font-family: 'GrotExBold';
+}
+
+/* Navbar decor*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top:0%;
+  right:0%;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* banner end*/
+
+/* instructors start*/
+
+/* 1st row*/
+#instro1 {
+    background-color:black;
+    height:230vh;
+    position: relative;
+}
+#instro1 .SadieAdair{
+    position:absolute;
+    background-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-bottom-color: white;
+    border-left-color: white;
+    left:0vw;
+    height:33vmax;
+    width:33vmax;
+}
+#instro1 .SadieAdair p{
+    color:white;
+    font-size: 1.5544vw;
+    font-weight: bolder;
+    position:absolute;
+    left:10%;
+    font-family: 'GrotExBold';
+}
+#instro1 .SadieAdair img{
+    position:absolute;
+    left:0%;
+    bottom:0%;
+    width:33vw;
+    height:26.5vmax;
+    border-radius: 50%;
+}
+
+#instro1 .KiraAkmajian{
+    position:absolute;
+    left:33.23vw;
+    background-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-bottom-color: white;
+    border-left-color: white;
+    height:33vmax;
+    width:33vmax;
+}
+#instro1 .KiraAkmajian p{
+    color:white;
+    font-size: 1.5544vw;
+    font-weight: bolder;
+    position:absolute;
+    left:10%;
+    font-family: 'GrotExBold';
+}
+#instro1 .KiraAkmajian img{
+    position:absolute;
+    left:0%;
+    bottom:0%;
+    width:33vmax;
+    height:26.5vmax;
+    border-radius: 50%;
+}
+
+/* the third one is hard too much code doc.*/
+#instro1 .AmeliaAndreoni{
+    position:absolute;
+    left:66.33vw;
+    background-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-bottom-color: white;
+    border-right-color: white;
+    border-left-color: white;
+    width:33.33vmin;
+    height:33vmax;
+}
+@media only screen and (max-width: 600px) {
+    #instro1 .AmeliaAndreoni{
+        width:33.3333vmin;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #instro1 .AmeliaAndreoni{
+        width:33.333vmax;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #instro1 .AmeliaAndreoni{
+        width:33.33vmax;
+    }
+}
+
+#instro1 .AmeliaAndreoni img{
+    position:absolute;
+    left:0%;
+    bottom:0%;
+    width:33vmax;
+    height:26.5vmax;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+    #instro1 .AmeliaAndreoni img{
+        width:33.3333vmin;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #instro1 .AmeliaAndreoni img{
+        width:33.333vmax;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #instro1 .AmeliaAndreoni img{
+        width:33.33vmax;
+    }
+}
+
+#instro1 .AmeliaAndreoni p{
+    color:white;
+    font-size: 1.5544vw;
+    font-weight: bolder;
+    position:absolute;
+    left:10%;
+    font-family: 'GrotExBold';
+}
+/* 2nd row */
+#instro1 .RyanBlair{
+    position:absolute;
+    background-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-top-color: white;
+    left:0vw;
+    top:63.33vh;
+    height:33vmax;
+    width:33vmax;
+}
+
+#instro1 .RyanBlair img{
+    position:absolute;
+    left: 0%;
+    bottom:0%;
+    width:33vmax;
+    height:26.33vmax;
+    border-radius: 50%;
+}
+
+#instro1 .RyanBlair p{
+    color:white;
+    font-size: 1.5544vw;
+    font-weight: bolder;
+    position:absolute;
+    left:10%;
+    font-family: 'GrotExBold';
+}
+
+#instro1 .KatharineChaves{
+    position:absolute;
+    left:33.23vw;
+    top:63.33vh;
+    background-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-bottom-color: white;
+    border-top-color: white;
+    border-left-color: white;
+    height:33vmax;
+    width:33vmax;
+}
+#instro1 .KatharineChaves img{
+    position:absolute;
+    left: 0%;
+    bottom:0%;
+    width:33vmax;
+    height:26.23vmax;
+    
+    border-radius: 50%;
+}
+#instro1 .KatharineChaves p{
+    color:white;
+    font-size: 1.5544vw;
+    font-weight: bolder;
+    position:absolute;
+    left:10%;
+    font-family: 'GrotExBold';
+}
+/* the third one is hard too much code doc.*/
+#instro1 .PedroGonzalez{
+    position:absolute;
+    left:66.33vw;
+    top:63.33vh;
+    background-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-right-color: white;
+    border-left-color: white;
+    width:33.33vmin;
+    height:33vmax;
+}
+@media only screen and (max-width: 600px) {
+    #instro1 .PedroGonzalez{
+        width:33.3333vmin;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #instro1 .PedroGonzalez{
+        width:33.333vmax;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #instro1 .PedroGonzalez{
+        width:33.33vmax;
+    }
+}
+
+#instro1 .PedroGonzalez img{
+    position:absolute;
+    left:0%;
+    bottom:0%;
+    width:33vmax;
+    height:26vmax;
+    
+    border-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+    #instro1 .PedroGonzalez img{
+        width:33.3333vmin;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #instro1 .PedroGonzalez img{
+        width:33.333vmax;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #instro1 .PedroGonzalez img{
+        width:33.33vmax;
+    }
+}
+
+#instro1 .PedroGonzalez p{
+    color:white;
+    font-size: 1.5544vw;
+    font-weight: bolder;
+    position:absolute;
+    left:10%;
+    font-family: 'GrotExBold';
+}
+/* 3RD ROW START*/
+#instro1 .DannyHarvey{
+    position:absolute;
+    background-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-bottom-color: white;
+    border-left-color: white;
+    border-top-color: white;
+    left:0vw;
+    top:128.03vh;
+    height:33vmax;
+    width:33vmax;
+}
+#instro1 .DannyHarvey img{
+    position:absolute;
+    left: 0%;
+    bottom:0%;
+    width:33vmax;
+    height:26.23vmax;
+    border-radius: 50%;
+}
+#instro1 .DannyHarvey p{
+    color:white;
+    font-size: 1.5544vw;
+    font-weight: bolder;
+    position:absolute;
+    left:10%;
+    font-family: 'GrotExBold';
+}
+
+#instro1 .JenniferLeach{
+    position:absolute;
+    left:33.23vw;
+    top:128.03vh;
+    background-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-bottom-color: white;
+    border-top-color: white;
+    border-left-color: white;
+    height:33vmax;
+    width:33vmax;
+}
+#instro1 .JenniferLeach img{
+    position:absolute;
+    left: 0%;
+    bottom:0%;
+    width:33vmax;
+    height:26.23vmax;
+    border-radius: 50%;
+}
+#instro1 .JenniferLeach p{
+    color:white;
+    font-size: 1.5544vw;
+    font-weight: bolder;
+    position:absolute;
+    left:10%;
+    font-family: 'GrotExBold';
+}
+/* the third one is hard too much code doc.*/
+#instro1 .RileySwinney{
+    position:absolute;
+    left:66.33vw;
+    top:128.03vh;
+    background-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-right-color: white;
+    border-left-color: white;
+    width:33.33vmin;
+    height:33vmax;
+}
+@media only screen and (max-width: 600px) {
+    #instro1 .RileySwinney{
+        width:33.3333vmin;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #instro1 .RileySwinney{
+        width:33.333vmax;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #instro1 .RileySwinney{
+        width:33.33vmax;
+    }
+}
+
+
+#instro1 .RileySwinney img{
+    position:absolute;
+    left:0%;
+    bottom:0%;
+    border-radius: 50%;
+    width:33vmax;
+    height:26vmax;
+}
+@media only screen and (max-width: 600px) {
+    #instro1 .RileySwinney img{
+        width:33.3333vmin;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #instro1 .RileySwinney img{
+        width:33.333vmax;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #instro1 .RileySwinney img{
+        width:33.33vmax;
+    }
+}
+
+
+#instro1 .RileySwinney p{
+    color:white;
+    font-size: 1.5544vw;
+    font-weight: bolder;
+    position:absolute;
+    left:10%;
+    font-family: 'GrotExBold';
+}
+
+
+
+/* instruasdncjsctur end*/
+
+/* image sparrow*/
+
+#site_title2134 img{
+    position:absolute;
+    top: 210vh;
+    right: 40%;
+    width:40vmin;
+    height:17vmin;
+}
+
+
+
+/* footer start*/
+
+#footer {
+    clear: both;
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555555;
+    background-color: white;
+    border-top: 1px solid #22211e;
+}
+
+#footer a {
+    font-weight: normal;
+    color: #777777;
+}
+
+#footer a:hover {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+#footer .footer_menu {
+    margin: 0 0 10px 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.footer_menu li {
+    margin: 0px;
+    padding: 0 20px;
+    display: inline;
+    border-right: 1px solid #555555;
+}
+
+.footer_menu .last_menu {
+    border: none;
+}
+
+/* end of footer */
+
+

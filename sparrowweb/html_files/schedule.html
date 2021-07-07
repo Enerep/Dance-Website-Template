@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../fw/schstyle.css">
+    <script src="../fw/schjs.js"> </script>
+    
+    <title>BatOchir</title>
+  </head>
+  <body>
+      <div id="banner">
+          
+          <!-- navbar -->
+          <p class="clsd"><strong> SCHEDULE</strong> </p>
+          
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+            <a href="#">&#63</a>
+          </div>
+
+          <span style="font-size:4vmax;cursor:pointer;color:white" onclick="openNav()">&#9776; </span>
+          
+          <!-- End of navbar -->
+          
+          <!-- the logo thing, when cliked it redirects to homepage(if wanted to welcome i can make a html file without welcome and redirect there)-->
+        <div id="site_title">
+          <h1> <a href="home.html"> <img src="../images/bat.png" alt=""/></a> </h1>
+        </div>
+
+        <!-- The top instructor and schedule adn about me, can edit if wanted -->
+        <div class = "somethingtop">
+            <a style="text-decoration:none" href="instructors.html" class="instructorp1"> INSTRUCTOR </a>
+            <a style="text-decoration:none" href="schedule.html"class="instructorp2"> SCHEDULE </a>
+            <a style="text-decoration:none" href="about.html"class="instructorp3"> ABOUT US </a>
+        </div>
+        
+      </div>
+      <!-- banner end -->
+      
+      <!-- schedule start -->
+      
+      
+      <div class="gggg"> Schedule of
+          <p id="chang"> time </p>
+      </div>
+      
+      <script>
+          var dateObj = new Date();
+          var month = dateObj.getUTCMonth() + 1; //months from 1-12
+          var day = dateObj.getUTCDate();
+          var year = dateObj.getUTCFullYear();
+          if(month==6){month="June";}
+          if(month==1){month="January";}
+          if(month==2){month="Febraury";}
+          if(month==3){month="March";}
+          if(month==4){month="April";}
+          if(month==5){month="May";}
+          if(month==7){month="July";}
+          if(month==8){month="August";}
+          if(month==9){month="September";}
+          if(month==10){month="October";}
+          if(month==11){month="November";}
+          if(month==12){month="December";}
+          newdate = month +" " +year;
+      document.getElementById("chang").innerHTML = newdate;
+      document.getElementById("chang").style.fontFamily = "Impact,Charcoal,sans-serif";
+      </script>
+      
+      <div class="sche1">
+          <img src=""> </img
+      </div>
+      <div class="sche2">
+          <img src=""> </img
+      </div>
+      
+      <div id="schedulee">
+        <p> LET'S HAVE </br> <strong>FUN</strong> </p>
+      </div>
+      <!-- schedule end -->
+      
+      <!--Footer can add more-->
+      <div id="footer">
+        <ul class="footer_menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="last_menu"><a href="home.html#contactus">Contact</a></li>
+        </ul>
+        Copyright &copy; <a href="https://www.facebook.com/enerel.amgalan.12327/">Bat-Ochir</a></div>
+      <!--end footer -->
+
+    </body>
+</html>

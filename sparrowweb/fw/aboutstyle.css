@@ -1,0 +1,232 @@
+body{
+    background: white;
+    margin: 0;
+    
+}
+
+* { box-sizing: border-box }
+
+/* animation of text start*/
+@media (prefers-reduced-motion: no-preference) {
+  #banner p{
+    animation-name: wipe-enter;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+@keyframes wipe-enter {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+}
+/* animation of text end*/
+
+
+#banner {
+    clear: both;
+    background-color: rgb(135,135,135);
+    width: 100vw;
+    height: 287.45vh;
+    padding: 0 10px;
+    border-width: bold;
+    border-style: solid;
+    border-bottom-color: white;
+}
+
+#banner p{
+    color:white;
+    font-size:5vmax;
+    text-align:center;
+    position:relative;
+    top:100px;
+    
+    display: inline-block;
+     -webkit-transform: scale(1.5, 1);
+     -moz-transform: scale(1.5, 1);
+     -o-transform: scale(1.5, 1);
+     transform: scale(1.5, 1);
+     margin-left:36.5%;
+     margin-right:15%;
+    
+}
+
+#banner #site_title {
+    padding: 10px 0 0 0;
+    margin: 0 auto;
+}
+
+#banner #site_title img{
+    
+    position: fixed;
+    top:2.6%;
+    left:1%;
+    width:30vmin;
+}
+
+#banner span{
+    position:fixed;
+    top:2.5%;
+    right:2.5%;
+}
+
+#site_title h1 a {
+    margin: 0px;
+    padding: 0px;
+    font-size: 32px;
+    color: #cdcf19;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#site_title h1 a:hover {
+    font-weight: normal;
+    text-decoration: none;
+}
+/* Stupid mistake but too lazy to fix, also its the about schedule and intrustors*/
+.somethingtop .instructorp1{
+    position:fixed;
+    padding:5px;
+    top:3.9%;
+    left:40%;
+    color:#A9A9A9;
+    font-size:2.5vmin;
+    font-family: 'GrotExBold';
+}
+.somethingtop .instructorp2{
+    position:fixed;
+    padding:5px;
+    top:3.9%;
+    left:56.5%;
+    color:#A9A9A9;
+    font-size:2.5vmin;
+    font-family: 'GrotExBold';
+}
+.somethingtop .instructorp3{
+    position:fixed;
+    padding:5px;
+    top:3.9%;
+    left:70%;
+    color:white;
+    font-size:2.5vmin;
+    font-family: 'GrotExBold';
+}
+
+/* Navbar decor*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top:0%;
+  right:0%;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* banner end*/
+
+/* a whole essay*/
+.imgrand {
+    width:35vmax;
+    height: 50vmin;
+    margin-top:300px;
+    float: right;
+}
+.wholeEssay {
+    position: relative;
+    margin-top: 300px;
+    font-size: 2vmax;
+    margin-right: 30px;
+    margin-left:30px;
+    color:white;
+    font-family: "Times New Roman", Times, serif;
+    word-spacing: 10px;
+}
+
+.randomword {
+    position: relative;
+    text-align:center;
+    margin-top: 200px;
+    font-size: 3.5vmax;
+    margin-right: 30px;
+    margin-left:30px;
+    color:white;
+    font-family: "Times New Roman", Times, serif;
+    word-spacing: 10px;
+}
+
+/* a whole essay end*/
+
+
+/* footer start*/
+#footer {
+    clear: both;
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555555;
+    background-color: white;
+    border-top: 1px solid #22211e;
+}
+
+#footer a {
+    font-weight: normal;
+    color: #777777;
+}
+
+#footer a:hover {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+#footer .footer_menu {
+    margin: 0 0 10px 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.footer_menu li {
+    margin: 0px;
+    padding: 0 20px;
+    display: inline;
+    border-right: 1px solid #555555;
+}
+
+.footer_menu .last_menu {
+    border: none;
+}
+
+/* end of footer */
+
